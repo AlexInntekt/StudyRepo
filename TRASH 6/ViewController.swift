@@ -20,19 +20,7 @@ class ViewController: UIViewController
     
     @IBAction func BTsettings(_ sender: Any)
     {
-        if(areSettingsButtonsDisplayed)
-        {
-            constraintDisplay.constant = -300
-            areSettingsButtonsDisplayed = false
-            H.alpha = 0
-        }
-        else
-        {
-            areSettingsButtonsDisplayed = true
-            constraintDisplay.constant = 1
-
-        }
-        
+       showOffButtons()
     }
     
 
@@ -45,12 +33,50 @@ class ViewController: UIViewController
         areSettingsButtonsDisplayed = false
         H.alpha = 0
         
+   
 
         
-        //print(constraintDisplay.multiplier)  //TU
+        
+        //these 3 lines of codes keep track of the right gesture, calling the function respondToSwipeGesture():
+        let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(self.respondToSwipeGesture))
+        swipeLeft.direction = UISwipeGestureRecognizerDirection.left
+        self.view.addGestureRecognizer(swipeLeft)
     }
 
     
+    func showOffButtons()
+    {
+        if(areSettingsButtonsDisplayed)
+        {
+            constraintDisplay.constant = -300
+            areSettingsButtonsDisplayed = false
+            H.alpha = 0
+        }
+        else
+        {
+            areSettingsButtonsDisplayed = true
+            constraintDisplay.constant = 1
+            H.alpha = 1
+        }
+    }
+    
+    
+    
+    func respondToSwipeGesture(gesture: UIGestureRecognizer)
+    {
+        if let swipeGesture = gesture as? UISwipeGestureRecognizer
+        {
+            switch swipeGesture.direction
+            {
+            case UISwipeGestureRecognizerDirection.left:
+                print("Swiped left")
+                performSegue(withIdentifier: "SegueBackHome", sender: nil)
+                
+            default:
+                break
+            }
+        }
+    }
 
     
 }
