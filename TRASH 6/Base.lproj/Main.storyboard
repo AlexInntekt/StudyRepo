@@ -69,6 +69,7 @@
                     </view>
                     <connections>
                         <outlet property="H" destination="hgj-HF-S2C" id="3ph-2b-hRe"/>
+                        <outlet property="bch2" destination="jW6-et-0ok" id="qlM-2S-Abj"/>
                         <outlet property="constraintDisplay" destination="biK-vG-V72" id="pad-no-tv4"/>
                     </connections>
                 </viewController>

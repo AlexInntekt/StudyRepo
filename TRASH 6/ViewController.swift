@@ -12,6 +12,8 @@ class ViewController: UIViewController
 {
     var areSettingsButtonsDisplayed = false
     
+    @IBOutlet weak var bch2: UILabel!
+    
     @IBOutlet weak var H: UIButton!
     @IBAction func H(_ sender: Any)
     {
