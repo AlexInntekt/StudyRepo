@@ -10,6 +10,9 @@ import UIKit
 
 class ViewController: UIViewController
 {
+    var branch1 = String()
+    
+    
     var areSettingsButtonsDisplayed = false
     
     @IBOutlet weak var H: UIButton!
