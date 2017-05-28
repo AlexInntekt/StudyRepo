@@ -35,7 +35,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tcw-3P-7Gh">
-                                <rect key="frame" x="216.5" y="67" width="73" height="67"/>
+                                <rect key="frame" x="217" y="67" width="73" height="67"/>
                                 <state key="normal" title="#" image="settings-512">
                                     <color key="titleColor" red="0.25098040700000002" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -61,13 +61,25 @@
                                     <constraint firstAttribute="width" constant="240" id="EMd-Ap-0bW"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fvw-CO-47a">
+                                <rect key="frame" x="29" y="420" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="42" id="4E2-CE-w9d"/>
+                                    <constraint firstAttribute="height" constant="21" id="POn-Xo-1wI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="Qlz-ra-AJY" firstAttribute="top" secondItem="fvw-CO-47a" secondAttribute="bottom" constant="34" id="IOR-3K-osQ"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="GLh-uh-bHZ" secondAttribute="bottom" constant="20" id="OMA-TZ-Tne"/>
                             <constraint firstItem="hgj-HF-S2C" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.1" id="PGc-RM-ya5"/>
                             <constraint firstItem="Qlz-ra-AJY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="44" id="Qyk-MZ-kFW"/>
                             <constraint firstItem="tcw-3P-7Gh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="1.35" id="VsS-23-mar"/>
+                            <constraint firstItem="fvw-CO-47a" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="13" id="aZc-uG-IEu"/>
                             <constraint firstItem="hgj-HF-S2C" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="0.35" id="biK-vG-V72"/>
                             <constraint firstItem="tcw-3P-7Gh" firstAttribute="height" secondItem="hgj-HF-S2C" secondAttribute="height" id="cnM-D5-c9X"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Qlz-ra-AJY" secondAttribute="bottom" constant="124" id="dAu-F6-ttP"/>
