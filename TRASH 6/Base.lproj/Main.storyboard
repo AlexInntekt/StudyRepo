@@ -53,13 +53,25 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="from 2nd branch" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ya9-Gp-ACb">
+                                <rect key="frame" x="176" y="216" width="189" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="0pj-63-pF3"/>
+                                    <constraint firstAttribute="width" constant="189" id="jaA-Ab-KKd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="hgj-HF-S2C" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.1" id="PGc-RM-ya5"/>
                             <constraint firstItem="Qlz-ra-AJY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="44" id="Qyk-MZ-kFW"/>
                             <constraint firstItem="tcw-3P-7Gh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="1.35" id="VsS-23-mar"/>
+                            <constraint firstItem="ya9-Gp-ACb" firstAttribute="top" secondItem="tcw-3P-7Gh" secondAttribute="bottom" constant="82" id="XYt-Ak-alJ"/>
                             <constraint firstItem="hgj-HF-S2C" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="0.35" id="biK-vG-V72"/>
+                            <constraint firstAttribute="trailing" secondItem="ya9-Gp-ACb" secondAttribute="trailing" constant="10" id="cUA-VT-4vB"/>
                             <constraint firstItem="tcw-3P-7Gh" firstAttribute="height" secondItem="hgj-HF-S2C" secondAttribute="height" id="cnM-D5-c9X"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Qlz-ra-AJY" secondAttribute="bottom" constant="124" id="dAu-F6-ttP"/>
                             <constraint firstItem="tcw-3P-7Gh" firstAttribute="width" secondItem="hgj-HF-S2C" secondAttribute="width" id="p18-dP-cPG"/>
