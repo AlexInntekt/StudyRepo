@@ -35,7 +35,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tcw-3P-7Gh">
-                                <rect key="frame" x="216.5" y="67" width="73" height="67"/>
+                                <rect key="frame" x="217" y="67" width="73" height="67"/>
                                 <state key="normal" title="#" image="settings-512">
                                     <color key="titleColor" red="0.25098040700000002" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -53,15 +53,25 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B13-n9-M6d">
+                                <rect key="frame" x="249" y="158" width="110" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="Yi1-18-NK3"/>
+                                    <constraint firstAttribute="width" constant="110" id="dfl-Ng-rrm"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="hgj-HF-S2C" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.1" id="PGc-RM-ya5"/>
                             <constraint firstItem="Qlz-ra-AJY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="44" id="Qyk-MZ-kFW"/>
                             <constraint firstItem="tcw-3P-7Gh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="1.35" id="VsS-23-mar"/>
+                            <constraint firstItem="Qlz-ra-AJY" firstAttribute="top" secondItem="B13-n9-M6d" secondAttribute="bottom" constant="189" id="Yzi-QY-Lqe"/>
                             <constraint firstItem="hgj-HF-S2C" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="0.35" id="biK-vG-V72"/>
                             <constraint firstItem="tcw-3P-7Gh" firstAttribute="height" secondItem="hgj-HF-S2C" secondAttribute="height" id="cnM-D5-c9X"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Qlz-ra-AJY" secondAttribute="bottom" constant="124" id="dAu-F6-ttP"/>
+                            <constraint firstItem="B13-n9-M6d" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="ov0-lL-udj"/>
                             <constraint firstItem="tcw-3P-7Gh" firstAttribute="width" secondItem="hgj-HF-S2C" secondAttribute="width" id="p18-dP-cPG"/>
                             <constraint firstItem="tcw-3P-7Gh" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.3" id="ubB-Gg-aBg"/>
                             <constraint firstItem="hgj-HF-S2C" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="xoY-XF-7sE"/>
