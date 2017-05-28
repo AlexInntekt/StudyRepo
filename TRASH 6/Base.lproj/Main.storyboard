@@ -7,6 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -42,13 +43,25 @@
                                     <action selector="BTsettings:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W3W-zj-nE0"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Merging 2nd br" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qlz-ra-AJY">
+                                <rect key="frame" x="60" y="475" width="242" height="68"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="68" id="1DH-U5-vqv"/>
+                                    <constraint firstAttribute="width" constant="242" id="FnQ-MW-EEf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="hgj-HF-S2C" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.1" id="PGc-RM-ya5"/>
+                            <constraint firstItem="Qlz-ra-AJY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="44" id="Qyk-MZ-kFW"/>
                             <constraint firstItem="tcw-3P-7Gh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="1.35" id="VsS-23-mar"/>
                             <constraint firstItem="hgj-HF-S2C" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="0.35" id="biK-vG-V72"/>
                             <constraint firstItem="tcw-3P-7Gh" firstAttribute="height" secondItem="hgj-HF-S2C" secondAttribute="height" id="cnM-D5-c9X"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Qlz-ra-AJY" secondAttribute="bottom" constant="124" id="dAu-F6-ttP"/>
                             <constraint firstItem="tcw-3P-7Gh" firstAttribute="width" secondItem="hgj-HF-S2C" secondAttribute="width" id="p18-dP-cPG"/>
                             <constraint firstItem="tcw-3P-7Gh" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.3" id="ubB-Gg-aBg"/>
                             <constraint firstItem="hgj-HF-S2C" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="xoY-XF-7sE"/>
